@@ -38,7 +38,7 @@ function restart(options, container, resetBtn){
     container[0].removeAttribute("id")
     container[1].setAttribute("id", "bot")
     resetBtn.setAttribute("id", "none")
-    botClick(player)
+    //botClick(player)
 }
 
 function tablePosition(n , isPlayer){
@@ -119,13 +119,14 @@ const click = (selected, isPlayer) =>{
         })
     }
 }
-/*
+
 player.forEach(element => {
     element.addEventListener("click", function(){botClick(player)})
 });
-*/
 
 
+/*
 player.forEach(piringo => {
    piringo.addEventListener("click", function(){click(piringo, true)})
 });
+*/
