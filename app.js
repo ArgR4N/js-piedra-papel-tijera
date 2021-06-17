@@ -119,14 +119,13 @@ const click = (selected, isPlayer) =>{
         })
     }
 }
-
+/*
 player.forEach(element => {
     element.addEventListener("click", function(){botClick(player)})
 });
+*/
 
 
-/*
 player.forEach(piringo => {
    piringo.addEventListener("click", function(){click(piringo, true)})
 });
-*/

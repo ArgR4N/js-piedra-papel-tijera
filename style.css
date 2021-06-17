@@ -3,12 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.gitIcon{
+   display: flex;
+   justify-content: center;
+    margin: 0 auto;
+}
+.gitIcon i{
+    font-size: 50px;
+}
+
+.gitIcon a:visited, .gitIcon a:hover, .gitIcon a:active{
+    color: black;
+}
 .game{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 90vh;
 }
 .mainContainer{
     margin: 0 auto;
