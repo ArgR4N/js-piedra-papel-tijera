@@ -15,9 +15,8 @@ const winMenssage = (msg,resetBtn) =>{
 }
 
 function whoWins(player, bot){
-
     if (player == bot) {
-        winMenssage("Empataste! ", resetBtn)
+        winMenssage("Empataste!", resetBtn)
         setTimeout(function(){restart(options, container, resetBtn)}, 3000)
     }
     if (player == 0 && bot == 2 || player == 1 && bot == 0 
@@ -27,7 +26,7 @@ function whoWins(player, bot){
     }
     if (bot == 0 && player == 2 || bot == 1 && player == 0 
         || bot == 2 && player == 1){
-            winMenssage("Perdiste!", resetBtn)
+        winMenssage("Perdiste!", resetBtn)
         setTimeout(function(){restart(options, container, resetBtn)}, 3000)
     }
 }
@@ -39,7 +38,7 @@ function restart(options, container, resetBtn){
     container[0].removeAttribute("id")
     container[1].setAttribute("id", "bot")
     resetBtn.setAttribute("id", "none")
-    //botClick(player)
+    botClick(player)
 }
 
 function tablePosition(n , isPlayer){
@@ -68,7 +67,6 @@ function tablePosition(n , isPlayer){
 }
 
 const tableAnalize = (botElement, playerElement)=>{
-
     let nPlayer = 0
     player.forEach(element => {
         if (element == playerElement) {
@@ -89,6 +87,8 @@ const tableAnalize = (botElement, playerElement)=>{
     });
 
 }
+
+
 
 const botClick  = (player) =>{
     choise = player[Math.floor(Math.random() * 3)]
@@ -118,13 +118,14 @@ const click = (selected, isPlayer) =>{
             }
         })
     }
-
 }
 /*
 player.forEach(element => {
     element.addEventListener("click", function(){botClick(player)})
 });
 */
-player.forEach(element => {
-    element.addEventListener("click", function(){click(element, true)})
+
+
+player.forEach(piringo => {
+   piringo.addEventListener("click", function(){click(piringo, true)})
 });
