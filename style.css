@@ -11,9 +11,10 @@
 }
 .gitIcon i{
     font-size: 50px;
+    color: black;
 }
 
-.gitIcon a:visited, .gitIcon a:hover, .gitIcon a:active{
+.gitIcon a:visited, .gitIcon a:hover, .gitIcon a:active, .gitIcon i{
     color: black;
 }
 .game{
